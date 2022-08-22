@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--display sites properly based on the user device-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>positioning</title>
+    <link rel="stylesheet" href="position1.css">
+</head>
+<body>
+    <div class="pos-container">
+        <div class="example relative">
+            <div class="item">
+                <img src="ig1.png" alt="image1">
+            </div>
+            <div class="item relative-item">
+                <img src="tw2.png" alt="image1">
+            </div>
+            <div class="item">
+                <img src="wa2.png" alt="image1">
+            </div>
+        </div>
+    </div>
+
+    <div class="pos-container">
+        <div class="example absolute">
+            <div class="item">
+                <img src="ig2.png" alt="image2">
+            </div>
+            <div class="item absolute-item">
+                <img src="tw4.png" alt="image2">
+            </div>
+            <div class="item">
+                <img src="wa4.png" alt="image2">
+            </div>
+        </div>
+    </div>
+
+    <div class="pos-container">
+        <div class="example fixed">
+            <div class="item">
+                <img src="ig1.png" alt="image3">
+            </div>
+            <div class="item fixed-item">
+                <img src="tw2.png" alt="image3">
+            </div>
+            <div class="item">
+                <img src="wa5.png" alt="image3">
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--<script>
+    var left = 0;
+  
+    function frame() {
+      var element = document.querySelector('.relative-item');
+      left += 2;
+      element.style.left = left + 'px';
+      if (left >= 300) {
+        clearInterval(id)
+      }
+    }
+  
+    var id = setInterval(frame, 10)
+  </script>-->
+</html>
